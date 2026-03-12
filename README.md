@@ -317,19 +317,18 @@ Interest in Data Science
 ---
 
 ## Getting Started
-
 ```bash
 git clone https://github.com/Shrey-Trivedi-18/subscriber-churn-analysis.git
 cd subscriber-churn-analysis
 
 pip install -r requirements.txt
 
-# Generate all plots
-python Model/graphs.py
+# Generate all EDA plots
+python visualization/graphs.py
 
-# Run model
+# Train and evaluate the model
 python Model/model.py
 
-# Run notebook
-jupyter notebook subscriber_analysis.ipynb
+# Run full exploratory analysis
+jupyter notebook notebooks/subscriber_analysis.ipynb
 ```
