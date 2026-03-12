@@ -226,7 +226,7 @@ churn-analysis/
 ## Getting Started
 
 ```bash
-git clone https://github.com/your-Shrey-Trivedi-18/churn-analysis.git
+git clone https://github.com/Shrey-Trivedi-18/subscriber-churn-analysis.git
 cd churn-analysis
 
 pip install -r requirements.txt
