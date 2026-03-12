@@ -308,7 +308,11 @@ jupyter notebook notebooks/subscriber_analysis.ipynb
 ## Author
 
 **Shrey Trivedi**
-[GitHub](https://github.com/Shrey-Trivedi-18) · [LinkedIn](https://www.linkedin.com/in/your-linkedin-here)
+
+Computer Engineering Student, Purdue University
+Interest in Data Science
+
+[GitHub](https://github.com/Shrey-Trivedi-18) · [LinkedIn](https://www.linkedin.com/in/shreytrivedi18/)
 
 ---
 
