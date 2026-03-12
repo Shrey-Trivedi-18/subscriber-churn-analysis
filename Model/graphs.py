@@ -31,7 +31,6 @@ plt.figure(figsize=(6,4))
 sns.countplot(x="Churn", data=df)
 plt.title("Churn Distribution")
 plt.savefig(os.path.join(IMAGE_DIR, "churn_distribution.png"))
-plt.legend(loc="upper right", fontsize="small", title="Churn", title_fontsize="medium", label = [" Churn", "Churn"])
 plt.close()
 
 # --------------------------------
@@ -42,7 +41,6 @@ plt.figure(figsize=(6,4))
 sns.countplot(x="gender", hue="Churn", data=df)
 plt.title("Churn by Gender")
 plt.savefig(os.path.join(IMAGE_DIR, "churn_by_gender.png"))
-plt.legend(loc="upper right", fontsize="small", title="Churn", title_fontsize="medium", label = [" Churn", "Churn"])
 plt.close()
 
 # --------------------------------
@@ -53,7 +51,6 @@ plt.figure(figsize=(6,4))
 sns.countplot(x="InternetService", hue="Churn", data=df)
 plt.title("Churn by Internet Service")
 plt.savefig(os.path.join(IMAGE_DIR, "churn_by_internet.png"))
-plt.legend(loc="upper right", fontsize="small", title="Churn", title_fontsize="medium", label = [" Churn", "Churn"])
 plt.close()
 
 # --------------------------------
@@ -64,7 +61,6 @@ plt.figure(figsize=(6,4))
 sns.countplot(x="SeniorCitizen", hue="Churn", data=df)
 plt.title("Churn by Senior Citizen")
 plt.savefig(os.path.join(IMAGE_DIR, "churn_by_senior.png"))
-plt.legend(loc="upper right", fontsize="small", title="Churn", title_fontsize="medium", label = [" Churn", "Churn"])
 plt.close()
 
 # --------------------------------
@@ -75,7 +71,6 @@ plt.figure(figsize=(6,4))
 sns.countplot(x="Dependents", hue="Churn", data=df)
 plt.title("Churn by Dependents")
 plt.savefig(os.path.join(IMAGE_DIR, "churn_by_dependents.png"))
-plt.legend(loc="upper right", fontsize="small", title="Churn", title_fontsize="medium", label = [" Churn", "Churn"])
 plt.close()
 
 # --------------------------------
@@ -86,7 +81,6 @@ plt.figure(figsize=(6,4))
 sns.countplot(x="OnlineSecurity", hue="Churn", data=df)
 plt.title("Churn by Online Security")
 plt.savefig(os.path.join(IMAGE_DIR, "churn_by_security.png"))
-plt.legend(loc="upper right", fontsize="small", title="Churn", title_fontsize="medium", label = [" Churn", "Churn"])
 plt.close()
 
 # --------------------------------
@@ -97,7 +91,6 @@ plt.figure(figsize=(6,4))
 sns.countplot(x="TechSupport", hue="Churn", data=df)
 plt.title("Churn by Tech Support")
 plt.savefig(os.path.join(IMAGE_DIR, "churn_by_techsupport.png"))
-plt.legend(loc="upper right", fontsize="small", title="Churn", title_fontsize="medium", label = [" Churn", "Churn"])
 plt.close()
 
 # --------------------------------
