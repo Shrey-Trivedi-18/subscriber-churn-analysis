@@ -2,7 +2,16 @@
 
 # Telecom Customer Churn Analysis & Prediction
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-lightgrey?style=flat-square&logo=pandas)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-orange?style=flat-square&logo=scikit-learn)
+![Tableau](https://img.shields.io/badge/Tableau-blue?style=flat-square&logo=tableau)
+![Seaborn](https://img.shields.io/badge/Seaborn-teal?style=flat-square)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-navy?style=flat-square)
+
 ![Dashboard](images/dashboard_preview.png)
+
+</div>
 
 </div>
 
@@ -241,11 +250,16 @@ A few directions to push accuracy further:
 ---
 
 ## Project Structure
-
 ```
 subscriber-churn-analysis/
+│
 ├── dashboard/
+│   └── dashboard.twb                 # Tableau dashboard
+│
 ├── data/
+│   └── processed/
+│       └── churn_cleaned.csv         # Cleaned dataset used for modeling
+│
 ├── images/
 │   ├── churn_by_billing.png
 │   ├── churn_by_contract.png
@@ -261,15 +275,40 @@ subscriber-churn-analysis/
 │   ├── dashboard_preview.png
 │   ├── monthly_charges.png
 │   ├── tenure_churn.png
-│   └── confusion_matrix.png
-├── Model/
-│   ├── model.py
-│   └── graphs.py
+│   └── confusion_matrix.png          # Model evaluation
+│
+├── visualization/
+│   └── graphs.py                     # Generates EDA visualizations
+│
+├── models/
+│   └── model.py                      # KNN churn prediction model
+│
 ├── notebooks/
-├── subscriber_analysis.ipynb
-├── requirements.txt
+│   └── subscriber_analysis.ipynb     # Full exploratory analysis
+│
+├── requirements.txt                  # Python dependencies
 └── README.md
 ```
+
+## Getting Started
+```bash
+pip install -r requirements.txt
+
+# Generate visualizations
+python visualization/graphs.py
+
+# Train churn prediction model
+python Model/model.py
+
+# Run notebook
+jupyter notebook notebooks/subscriber_analysis.ipynb
+```
+---
+
+## Author
+
+**Shrey Trivedi**
+[GitHub](https://github.com/Shrey-Trivedi-18) · [LinkedIn](https://www.linkedin.com/in/your-linkedin-here)
 
 ---
 
