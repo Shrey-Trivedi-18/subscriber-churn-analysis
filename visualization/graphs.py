@@ -1,11 +1,16 @@
 import os
+import sys
+
+# Add project root to Python path
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import ConfusionMatrixDisplay
-import sys
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-from model import y_test, y_pred
+from models.model import y_test, y_pred
+
 
 sns.set(style="whitegrid")
 
