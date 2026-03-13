@@ -77,7 +77,14 @@ accuracy = accuracy_score(y_test, y_pred)
 cm = confusion_matrix(y_test, y_pred)
 report = classification_report(y_test, y_pred)
 
+# --------------------------------
+# 11. Confusion Matrix
+# --------------------------------
 
+ConfusionMatrixDisplay.from_predictions(y_test, y_pred)
+plt.title("Confusion Matrix")
+plt.savefig(os.path.join(IMAGE_DIR, "confusion_matrix.png"))
+plt.close()
 
 print("Accuracy:", accuracy)
 print("Confusion Matrix:\n", cm)
