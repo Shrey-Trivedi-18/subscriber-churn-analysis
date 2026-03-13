@@ -228,8 +228,8 @@ knn.fit(X_train_scaled, y_train)
 
 | Metric            | Score |
 | ----------------- | ----- |
-| Accuracy          | 77.7% |
-| ROC AUC           | 0.69  |
+| Accuracy          | 73.7% |
+| ROC AUC           | 0.76  |
 | Precision (churn) | 0.60  |
 | Recall (churn)    | 0.51  |
 
@@ -292,13 +292,14 @@ subscriber-churn-analysis/
 
 ## Getting Started
 ```bash
+# Install dependencies
 pip install -r requirements.txt
+
+# Train churn prediction model
+python models/model.py
 
 # Generate visualizations
 python visualization/graphs.py
-
-# Train churn prediction model
-python Model/model.py
 
 # Run notebook
 jupyter notebook notebooks/subscriber_analysis.ipynb
