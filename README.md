@@ -19,7 +19,7 @@
 
 ## Overview
 
-> Analyzed 7,043 telecom customers to identify churn drivers and built a KNN classifier to flag at-risk customers. Key findings: contract type, payment method, and tenure are the strongest predictors of churn. Model achieved 77.7% accuracy with 0.69 ROC AUC.
+> Analyzed 7,043 telecom customers to identify churn drivers and built a KNN classifier to flag at-risk customers. Key findings: contract type, payment method, and tenure are the strongest predictors of churn. Model achieved 73.7% accuracy with 0.76 ROC AUC.
 
 ---
 
