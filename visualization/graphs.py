@@ -9,7 +9,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import ConfusionMatrixDisplay
-from models.model import y_test, y_pred
+from models.model import train_model
+y_test, y_pred, y_prob = train_model()
 
 
 sns.set(style="whitegrid")
