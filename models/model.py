@@ -76,6 +76,9 @@ y_pred = knn.predict(X_test_scaled)
 accuracy = accuracy_score(y_test, y_pred)
 cm = confusion_matrix(y_test, y_pred)
 report = classification_report(y_test, y_pred)
+y_prob = knn.predict_proba(X_test_scaled)[:,1]
+roc = roc_auc_score(y_test, y_prob)
+
 
 # --------------------------------
 # 11. Confusion Matrix
@@ -89,3 +92,4 @@ plt.close()
 print("Accuracy:", accuracy)
 print("Confusion Matrix:\n", cm)
 print("Classification Report:\n", report)
+print("ROC AUC:", roc)
