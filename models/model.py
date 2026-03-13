@@ -62,30 +62,15 @@ def train_model():
     knn = KNeighborsClassifier(n_neighbors=5)
     knn.fit(X_train_scaled, y_train)
 
-<<<<<<< HEAD
-accuracy = accuracy_score(y_test, y_pred)
-cm = confusion_matrix(y_test, y_pred)
-report = classification_report(y_test, y_pred)
-y_prob = knn.predict_proba(X_test_scaled)[:,1]
-roc = roc_auc_score(y_test, y_prob)
-
-=======
     # --------------------------------------------
     # 6. Make predictions
     # --------------------------------------------
     y_pred = knn.predict(X_test_scaled)
     y_prob = knn.predict_proba(X_test_scaled)[:, 1]
->>>>>>> d3f41d9 (Fix model side effects and refactor graphs to use train_model())
 
     return y_test, y_pred, y_prob
 
 
-<<<<<<< HEAD
-print("Accuracy:", accuracy)
-print("Confusion Matrix:\n", cm)
-print("Classification Report:\n", report)
-print("ROC AUC:", roc)
-=======
 if __name__ == "__main__":
     y_test, y_pred, y_prob = train_model()
 
@@ -109,4 +94,3 @@ if __name__ == "__main__":
     print("Accuracy:", accuracy)
     print("Confusion Matrix:\n", cm)
     print("Classification Report:\n", report)
->>>>>>> d3f41d9 (Fix model side effects and refactor graphs to use train_model())
