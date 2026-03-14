@@ -313,23 +313,5 @@ jupyter notebook notebooks/subscriber_analysis.ipynb
 Computer Engineering Student, Purdue University
 Interest in Data Science
 
-[GitHub](https://github.com/Shrey-Trivedi-18) · [LinkedIn](https://www.linkedin.com/in/shreytrivedi18/)
-
----
-
-## Getting Started
-```bash
-git clone https://github.com/Shrey-Trivedi-18/subscriber-churn-analysis.git
-cd subscriber-churn-analysis
-
-pip install -r requirements.txt
-
-# Generate all EDA plots
-python visualization/graphs.py
-
-# Train and evaluate the model
-python Model/model.py
-
-# Run full exploratory analysis
-jupyter notebook notebooks/subscriber_analysis.ipynb
-```
+[GitHub](https://github.com/Shrey-Trivedi-18) 
+[LinkedIn](https://www.linkedin.com/in/shreytrivedi18/)
